@@ -1,1 +1,1 @@
-# login for JNTU (Stash check)
+# login for JNTU (SSH check)
