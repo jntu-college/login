@@ -30,4 +30,23 @@ pipeline
 		}
 
 	}	
+
+	post {
+
+        always {
+            echo "Build Complted"
+        }
+        aborted {
+            echo "BUILD ABORTED"
+        }
+        success {
+            echo "BUILD COMPLETED SUCCESS"
+        }
+        unstable {
+            echo "BUILD IS UNSTABLE"
+        }
+        failure {
+            echo "BUILD GOT FAILED"
+        }
+    }
 }
