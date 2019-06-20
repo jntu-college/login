@@ -1,4 +1,6 @@
 #!groovy
+branch = env.BRANCH_NAME
+
 pipeline
 {
 	agent any
@@ -20,6 +22,10 @@ pipeline
 			{
 				checkout scm
 				echo "Cloning the latest code from GitHub"
+				script{
+						echo "Script is executing now"
+						echo "${branch}"
+				}
 			}			
 		}
 
