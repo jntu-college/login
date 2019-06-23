@@ -1,5 +1,5 @@
 #!groovy
-def branch = env.BRANH_NAME
+branch = env.BRANH_NAME
 
 pipeline
 {
