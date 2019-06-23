@@ -1,4 +1,6 @@
 #!groovy
+def branch = env.BRANH_NAME
+
 pipeline
 {
 	agent any
@@ -20,6 +22,7 @@ pipeline
 			{
 				checkout scm
 				echo "Cloning the latest code from GitHub"
+				echo "branch Name is: $branch"
 			}			
 		}
 
