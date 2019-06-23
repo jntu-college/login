@@ -22,7 +22,7 @@ pipeline
 			{
 				checkout scm
 				echo "Cloning the latest code from GitHub"
-				echo "branch Name is: $branch"
+				echo "branch Name is: ${branch}"
 			}			
 		}
 
