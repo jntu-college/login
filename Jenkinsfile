@@ -1,5 +1,5 @@
 #!groovy
-branch = env.BRANH_NAME
+branch = env.BRANcH_NAME
 
 pipeline
 {
@@ -22,7 +22,7 @@ pipeline
 			{
 				checkout scm
 				echo "Cloning the latest code from GitHub"
-				echo "branch Name is: ${branch}"
+				echo "${branch}"
 			}			
 		}
 
